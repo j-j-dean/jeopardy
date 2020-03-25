@@ -120,7 +120,7 @@
     z-index: 0;
     color: yellow;
     font-weight: bold;
-    //font-size: 400%;
+    text-align: center;
     font-size: 4vw;
 }
 
@@ -137,4 +137,3 @@
 #T1-Q1, #T1-Q2, #T1-Q3, #T1-Q4, #T1-Q5, #T1-Q6 {
     topic: 1;
 }
-
