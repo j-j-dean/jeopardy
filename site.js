@@ -1,4 +1,5 @@
 
+
 var jeopardy = {
    completed_questions: 0,
    your_score: 0,
