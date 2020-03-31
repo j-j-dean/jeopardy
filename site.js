@@ -64,7 +64,7 @@ jeopardy.CheckAnswer = function (){
     var correct_answer=""
    
     // Get the user's selection
-    var selection = $('#the-question').find(':checked').val();
+    var selection = $('#answers').find(':checked').val();
 
     // Update the score if the correct answer was given
     if (selection == correct_selection) {
@@ -77,7 +77,7 @@ jeopardy.CheckAnswer = function (){
     }
 
     // reset the click handler to null
-    jeopardy.CheckAnswerClick = null;
+    $("#final-answer").off( "click", jeopardy.CheckAnswer);
 
     // return to the jeopardy grid view
     jeopardy.BackToJeopardy(msg, correct_answer);
@@ -251,10 +251,7 @@ jeopardy.AskQuestion = function(box_element) {
         $('#answers').append(answers);
 
         // add the handler for clicking the submit button
-        jeopardy.CheckAnswerClick = function() {
-            jeopardy.CheckAnswer();
-        }
-        $('#final-answer').click(jeopardy.CheckAnswerClick);
+        $("#final-answer").on( "click", jeopardy.CheckAnswer);
 
         // set timer
         jeopardy.timeout = setTimeout(function() {
