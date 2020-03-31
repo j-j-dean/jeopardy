@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: Roboto, Arial, 'Times New Roman';
     font-size: 10px;
 }
@@ -112,6 +112,26 @@ right: 0%;
     color: white;
     font-size: 6vw;
 }
+
+#answers {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 3vw;
+}
+
+#final-answer {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    font-size: 2vw;
+}
+
 
 #question-box td {
     font-size: 1vw;
