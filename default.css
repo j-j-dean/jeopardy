@@ -115,7 +115,7 @@ right: 0%;
 
 #answers {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 0%;
     color: white;
     padding-left: 10%;
@@ -125,7 +125,7 @@ right: 0%;
 
 #final-answer {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 15%;
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
