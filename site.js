@@ -1,5 +1,4 @@
 
-
 var jeopardy = {
    completed_questions: 0,
    your_score: 0,
@@ -68,6 +67,8 @@ jeopardy.CheckAnswer = function (){
     var selection = $('#answers').find(':checked').val();
 
     // Update the score if the correct answer was given
+console.log("selection="+selection);
+console.log("corrent="+correct_selection);
     if (selection == correct_selection) {
         jeopardy.your_score += parseInt($('#T'+col_num+'-Q'+row_num+'-label').text());
         var score = $('#T'+col_num+'-Q'+row_num+'-label').text();
