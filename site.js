@@ -251,6 +251,7 @@ jeopardy.AskQuestion = function(box_element) {
 
         // add submit button
         $('#the-question').append('<br /><button id="final-answer" type="button">Submit Final Answer</button>');
+        $('#the-question').append("<br /><br />");
 
         // add the handler for clicking the submit button
         jeopardy.CheckAnswerClick = function() {
