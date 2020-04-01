@@ -191,6 +191,9 @@ jeopardy.BackToJeopardy = function(msg, correct_answer) {
         jeopardy.data[col_num-1].Questions[jeopardy.random_questions[col_num-1][row_num-1]].Answers[i] = "";
     }
 
+    // check the first radio button answer as the default in the question and answers view
+    $('#answer-a').prop("checked", true);
+
     // increment the number of completed questions
     jeopardy.completed_questions++;
 
