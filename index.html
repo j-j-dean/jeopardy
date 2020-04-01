@@ -23,9 +23,28 @@
         </div>
     </div>
     <div id="question-box">
-        <label id="the-question">Insert Question</label>
-        <div id="answers"></div>
-        <button id="final-answer" type="button">Submit Final Answer</button>
+        <div id="question-and-answers">
+            <div id="the-question">Insert Question</div>
+            <br />
+            <div>
+                <input type="radio" id="answer-a" name="answers" value="a" checked />
+                <label for="answer-a">Answer a</label>
+            </div>
+            <div>
+                <input type="radio" id="answer-b" name="answers" value="b"/>
+                <label for="answer-b">Answer b</label>
+            </div>
+            <div>
+                <input type="radio" id="answer-c" name="answers" value="c"/>
+                <label for="answer-c">Answer c</label>
+            </div>
+            <div>
+                <input type="radio" id="answer-d" name="answers" value="d"/>
+                <label for="answer-d">Answer d</label>
+            </div>
+            <br />
+            <button id="final-answer" type="button">Submit Final Answer</button>
+        </div>
     </div>
     <div id="completion-box">
         <div id="completion">
@@ -34,9 +53,11 @@
             <img id="img-balloons" src="https://j-j-dean.github.io/jeopardy/balloons.jpg" alt="balloons"/>
             <img id="img-bonus" src="https://j-j-dean.github.io/jeopardy/bonus.jpg" alt="bonus"/>
             <h2>You completed the challenge.</h2>
-            <p id="code">Winning code: Jesus4Ever</p>
-            <p id="extra">print a copy of the screen or remember the winning code to receive a prize
-                 when we return to class.  Extra bonus available if you score over 4000 points.</p>
+            <p class="extra">We will celebrate with everyone when we return to class.</p> 
+            <p id="challenge" class="extra">Extra challenge available if you score over 4000 points.</p>
+            <p id="bonus">
+                Bonus Challenge: memorize John3:16 or Matthew 22:38-39
+            </p>
             <button id="play-again">Click to Play Again!</button>
         </div>
     </div>
@@ -45,120 +66,120 @@
             <div class="jbox-header">
                  <h1>EARLY MINISTRY</h1>
             </div>
-            <div id="T1-Q1" class="jbox" topic=1 question=1>
-                <label id="T1-Q1-label">100</label>
+            <div id="T1-Q1" class="jbox">
+                <div id="T1-Q1-points" class="points" col_num=1 row_num=1>100</div>
             </div>
-            <div id="T1-Q2" class="jbox" topic=1 question=2>
-                 <label id="T1-Q2-label">200</label>
+            <div id="T1-Q2" class="jbox">
+                 <div id="T1-Q2-points" class="points" col_num=1 row_num=2>200</div>
             </div>
-            <div id="T1-Q3" class="jbox" topic=1 question=3>
-                 <label id="T1-Q3-label">300</label>
+            <div id="T1-Q3" class="jbox">
+                 <div id="T1-Q3-points" class="points" col_num=1 row_num=3>300</div>
             </div>
-            <div id="T1-Q4" class="jbox" topic=1 question=4>
-                 <label id="T1-Q4-label">400</label>
+            <div id="T1-Q4" class="jbox">
+                 <div id="T1-Q4-points" class="points" col_num=1 row_num=4>400</div>
             </div>
-            <div id="T1-Q5" class="jbox" topic=1 question=5>
-                 <label id="T1-Q5-label">500</label>
+            <div id="T1-Q5" class="jbox">
+                 <div id="T1-Q5-points" class="points" col_num=1 row_num=5>500</div>
             </div>
         </div>
         <div id="jcolumn2">
             <div class="jbox-header">
                  <h1>MIRACLES</h1>
             </div>
-            <div id="T2-Q1" class="jbox" topic=2 question=1>
-                <label id="T2-Q1-label">100</label>
+            <div id="T2-Q1" class="jbox">
+                <div id="T2-Q1-points" class="points" col_num=2 row_num=1>100</div>
             </div>
-            <div id="T2-Q2" class="jbox" topic=2 question=2>
-                 <label id="T2-Q2-label">200</label>
+            <div id="T2-Q2" class="jbox">
+                 <div id="T2-Q2-points" class="points" col_num=2 row_num=2>200</div>
             </div>
-            <div id="T2-Q3" class="jbox" topic=2 question=3>
-                 <label id="T2-Q3-label">300</label>
+            <div id="T2-Q3" class="jbox">
+                 <div id="T2-Q3-points" class="points" col_num=2 row_num=3>300</div>
             </div>
-            <div id="T2-Q4" class="jbox" topic=2 question=4>
-                 <label id="T2-Q4-label">400</label>
+            <div id="T2-Q4" class="jbox">
+                 <div id="T2-Q4-points" class="points" col_num=2 row_num=4>400</div>
             </div>
-             <div id="T2-Q5" class="jbox" topic=2 question=5>
-                 <label id="T2-Q5-label">500</label>
+             <div id="T2-Q5" class="jbox">
+                 <div id="T2-Q5-points" class="points" col_num=2 row_num=5>500</div>
             </div>
         </div>
         <div id="jcolumn3">
             <div class="jbox-header">
                  <h1>CHRISTMAS</h1>
             </div>
-            <div id="T3-Q1" class="jbox" topic=3 question=1>
-                <label id="T3-Q1-label">100</label>
+            <div id="T3-Q1" class="jbox">
+                <div id="T3-Q1-points" class="points" col_num=3 row_num=1>100</div>
             </div>
-            <div id="T3-Q2" class="jbox"topic=3 question=2>
-                 <label id="T3-Q2-label">200</label>
+            <div id="T3-Q2" class="jbox">
+                 <div id="T3-Q2-points" class="points" col_num=3 row_num=2>200</div>
             </div>
-            <div id="T3-Q3" class="jbox" topic=3 question=3>
-                 <label id="T3-Q3-label">300</label>
+            <div id="T3-Q3" class="jbox">
+                 <div id="T3-Q3-points" class="points" col_num=3 row_num=3>300</div>
             </div>
             <div id="T3-Q4" class="jbox" topic=3 question=4>
-                 <label id="T3-Q4-label">400</label>
+                 <div id="T3-Q4-points" class="points" col_num=3 row_num=4>400</div>
             </div>
-             <div id="T3-Q5" class="jbox" topic=3 question=5>
-                 <label id="T3-Q5-label">500</label>
+             <div id="T3-Q5" class="jbox">
+                 <div id="T3-Q5-points" class="points" col_num=3 row_num=5>500</div>
             </div>
         </div>
         <div id="jcolumn4">
               <div class="jbox-header">
                  <h1>DEATH & RESURRECTION</h1>
             </div>
-            <div id="T4-Q1" class="jbox" topic=4 question=1>
-                <label id="T4-Q1-label">100</label>
+            <div id="T4-Q1" class="jbox">
+                <div id="T4-Q1-points" class="points" col_num=4 row_num=1>100</div>
             </div>
-            <div id="T4-Q2" class="jbox"topic=4 question=2>
-                 <label id="T4-Q2-label">200</label>
+            <div id="T4-Q2" class="jbox">
+                 <div id="T4-Q2-points" class="points" col_num=4 row_num=2>200</div>
             </div>
-            <div id="T4-Q3" class="jbox" topic=4 question=3>
-                 <label id="T4-Q3-label">300</label>
+            <div id="T4-Q3" class="jbox">
+                 <div id="T4-Q3-points" class="points" col_num=4 row_num=3>300</div>
             </div>
-            <div id="T4-Q4" class="jbox" topic=4 question=4>
-                 <label id="T4-Q4-label">400</label>
+            <div id="T4-Q4" class="jbox">
+                 <div id="T4-Q4-points" class="points" col_num=4 row_num=4>400</div>
             </div>
-             <div id="T4-Q5" class="jbox" topic=4 question=5>
-                 <label id="T4-Q5-label">500</label>
+             <div id="T4-Q5" class="jbox">
+                 <div id="T4-Q5-points" class="points" col_num=4 row_num=5>500</div>
             </div>
         </div>
         <div id="jcolumn5">
             <div class="jbox-header">
                  <h1>PARABLES</h1>
             </div>
-            <div id="T5-Q1" class="jbox" topic=5 question=1>
-                <label id="T5-Q1-label">100</label>
+            <div id="T5-Q1" class="jbox">
+                <div id="T5-Q1-points" class="points" col_num=5 row_num=1>100</div>
             </div>
-            <div id="T5-Q2" class="jbox"topic=5 question=2>
-                 <label id="T5-Q2-label">200</label>
+            <div id="T5-Q2" class="jbox">
+                 <div id="T5-Q2-points" class="points" col_num=5 row_num=2>200</div>
             </div>
-            <div id="T5-Q3" class="jbox" topic=5 question=3>
-                 <label id="T5-Q3-label">300</label>
+            <div id="T5-Q3" class="jbox">
+                 <div id="T5-Q3-points" class="points" col_num=5 row_num=3>300</div>
             </div>
-            <div id="T5-Q4" class="jbox" topic=5 question=4>
-                 <label id="T5-Q4-label">400</label>
+            <div id="T5-Q4" class="jbox">
+                 <div id="T5-Q4-points" class="points" col_num=5 row_num=4>400</div>
             </div>
-             <div id="T5-Q5" class="jbox" topic=5 question=5>
-                 <label id="T5-Q5-label">500</label>
+             <div id="T5-Q5" class="jbox">
+                 <div id="T5-Q5-points" class="points" col_num=5 row_num=5>500</div>
             </div>
        </div>
         <div id="jcolumn6">
             <div class="jbox-header">
                  <h1>BIRTH & CHILDHOOD</h1>
             </div>
-            <div id="T6-Q1" class="jbox" topic=6 question=1>
-                <label id="T6-Q1-label">100</label>
+            <div id="T6-Q1" class="jbox">
+                <div id="T6-Q1-points" class="points" col_num=6 row_num=1>100</div>
             </div>
-            <div id="T6-Q2" class="jbox"topic=6 question=2>
-                 <label id="T6-Q2-label">200</label>
+            <div id="T6-Q2" class="jbox">
+                 <div id="T6-Q2-points" class="points" col_num=6 row_num=2>200</div>
             </div>
-            <div id="T6-Q3" class="jbox" topic=6 question=3>
-                 <label id="T6-Q3-label">300</label>
+            <div id="T6-Q3" class="jbox">
+                 <div id="T6-Q3-points" class="points" col_num=6 row_num=3>300</div>
             </div>
-            <div id="T6-Q4" class="jbox" topic=6 question=4>
-                 <label id="T6-Q4-label">400</label>
+            <div id="T6-Q4" class="jbox">
+                 <div id="T6-Q4-points" class="points" col_num=6 row_num=4>400</div>
             </div>
-             <div id="T6-Q5" class="jbox" topic=6 question=5>
-                 <label id="T6-Q5-label">500</label>
+             <div id="T6-Q5" class="jbox">
+                 <div id="T6-Q5-points" class="points" col_num=6 row_num=5>500</div>
             </div>
        </div>
     </div>
