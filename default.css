@@ -22,7 +22,7 @@ body {
     display: none;
     width: 10%;
     left: 30%;
-    top: 80%;
+    top: 70%;
 }
 
 p {
@@ -34,13 +34,15 @@ h2 {
     font-style: italic;
 }
 
-#code {
-    font-weight: bold;
-    font-size: 3vw;
+.extra {
+    color: #aaa;
+    line-height: 50%;
 }
 
-#extra {
-    color: #aaa;
+#bonus {
+    display: none;
+    font-size: 3vw;
+    color: yellow;
 }
 
 #info-hdr {
@@ -102,38 +104,28 @@ h2 {
     padding-top: 50%;
 }
 
-#the-question {
+#question-and-answers {
     position: absolute;
     top: 0%;
     left: 0%;
-bottom: 0%;
-right: 0%;
     padding: 5%;
     color: white;
-    font-size: 6vw;
-}
-
-#answers {
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    color: white;
-    padding-left: 10%;
-    padding-right: 10%;
     font-size: 3vw;
 }
 
-#final-answer {
-    position: absolute;
-    top: 80%;
-    left: 15%;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    font-size: 2vw;
-    background-color: white;
-    color: black;
+input[type=radio] {
+    width: 5%;
+    height: 1.5em;
 }
 
+#final-answer {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    color: black;
+    margin-left: 35%;
+    font-size: 2vw;
+}
 
 #question-box td {
     font-size: 1vw;
