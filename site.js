@@ -200,6 +200,8 @@ jeopardy.BackToJeopardy = function(msg, correct_answer) {
     // display completion page if all questions completed
     if (jeopardy.completed_questions == jconstants.TOTAL_QUESTIONS) {
         $('#score').text(msg + " All complete! Final score: " + jeopardy.your_score.toString());
+        var score_text = "<br />Your score - " + parseInt(jeopardy.your_score) + " points";
+        $('#completion').find('h2').append(score_text);
         $('#timer').text(correct_answer);
         jeopardy.DisplayCompletionMsg();
     }
